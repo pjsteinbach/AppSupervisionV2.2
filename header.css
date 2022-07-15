@@ -1,0 +1,122 @@
+.header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.header-bg--color{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, var(--gradient-primary-color) 0%, var(--gradient-secondary-color) 50%, var(--gradient-tertiary-color)100%);
+    z-index: -1;
+}
+
+.header-bg img{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(1);
+    z-index: -2;
+}
+
+.nav-container{
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    transition: var(--time-transition);
+    z-index: 11;
+}
+
+.nav-container.sticky{
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 16px var(--gradient-secondary-color);
+}
+
+.nav-container a{
+    text-decoration: none;
+}
+
+.nav-container__logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-container__logo h3{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-container__logo span{
+    color: var(--tertiary-color);
+    padding: 8px;
+}
+
+.nav-container__logo img{
+    height: 44px;
+    width: 44px;
+    fill: var(--text-color);
+}
+
+.nav-container__menu{
+    display: none;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.nav-container__list li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 4px 12px;  
+}
+
+.nav-container__list li::before{
+    content: '|';
+    padding-right: 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
+.nav-container__list li a{
+    position: relative;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 8px;
+    transition: var(--time-transition);
+}
+
+.nav-container__list li a::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    border-radius: 1px;
+    background-color: var(--tertiary-color);
+    opacity: 0;
+    transition: var(--time-transition);
+}
+
+.nav-container__list li a:hover{
+    color: var(--tertiary-color);
+}
+
+.nav-container__list li a:hover::after{
+    opacity: 1; 
+    width: 80%;
+    left: 10%;
+}

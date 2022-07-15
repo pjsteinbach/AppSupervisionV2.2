@@ -1,0 +1,3 @@
+flujo suave
+responsive
+ingreso con usuario y pass

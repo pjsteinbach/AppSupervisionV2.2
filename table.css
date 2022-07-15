@@ -1,0 +1,94 @@
+.table-container{
+    margin: 0 auto;
+    height: 100vh;
+    overflow: scroll;
+    width: 2088px;
+}
+
+.activity-table{
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 8px;
+    font-size: .8rem;
+}
+
+.table__header{
+    position: sticky;
+}
+
+.activity-table tr th{
+    font-weight: 500;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    color: var(--text-color);
+    border-right: .5px solid gray;
+}
+
+.activity-table__body tr td{
+    position: relative;
+    font-weight: 300;
+}
+
+.activity-table__body > tr > td > span{
+    position: absolute;
+    font-size: .5rem;
+}
+
+tr:nth-child(even){
+    background-color: var(--gradient-tertiary-color);
+}
+
+tr:hover td{
+    background-color: var(--tertiary-color);
+}
+
+.activity-table__body > tr > td > a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    opacity: .7;
+}
+
+.activity-table__body > tr > td > a:hover{
+    color: var(--text-color);
+    opacity: 1;
+}
+
+.activity-table__body > tr > td > a > span{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/*column widths*/
+
+.activity-table--date,
+.activity-table--report,
+.activity-table--duration{
+    width: 96px;
+}
+
+.activity-table--workers,
+.activity-table--meters,
+.activity-table--waste{
+    width: 120px;
+}
+
+.activity-table--type,
+.activity-table--municipality,
+.activity-table--locality,
+.activity-table--location,
+.activity-table--cooperative{
+    width: 160px;
+}
+
+.activity-table--watercourse{
+    width: 240px;
+}
+
+.activity-table--observations{
+    width: 400px;
+}
