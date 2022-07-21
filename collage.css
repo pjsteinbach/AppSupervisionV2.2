@@ -11,7 +11,7 @@
 .collage-main-container .figure1{
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    background-image: url(asset/img/background/background3.jpg);
+    background-image: url(asset/img/background/background4.jpg);
     background-size: cover;
 }
 
