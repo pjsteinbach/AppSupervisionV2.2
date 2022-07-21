@@ -161,6 +161,11 @@
         margin: 4px;
         padding: 0;
     }
+
+    .additional-news{
+        left: 8px;
+        bottom: -12px;
+    }
     
     /*activities*/
 
@@ -197,12 +202,19 @@
         font-size: .8rem;
     }
 
+    .current-works__datastudio-container{
+        width: calc(100% - 48px);
+    }
+
+
     .activity-container iframe{
         height: calc(150vh - 240px - 36px);
+
     }
 
     .current-works__iframe-container{
         height: calc(100vh - 240px - 36px);
+        width: calc(100% - 48px);
     }
 
 
@@ -314,6 +326,7 @@
         display: none;
     }
 
+
     /*activities*/
 
 
@@ -361,7 +374,19 @@
     /*current- works*/
 
     .current-works-container{
-        height: 110vh;
+        height: 100vh;
+    }
+
+    .current-works__iframe-container{
+        height: 36vh;
+    }
+
+    .current-works__datastudio-container a{
+        font-size: 1rem;
+    }
+
+    .current-works__datastudio-container a span{
+        font-size: 1.2rem;
     }
 
 
