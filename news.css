@@ -1,4 +1,5 @@
 .news-container{
+    position: relative;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -6,6 +7,7 @@
     width: 100%;
     padding-top: 60px;
     background-color: var(--primary-color);
+    padding-bottom: 24px;
 }
 
 .news-container__principal{
@@ -30,22 +32,23 @@
 .news-container__principal-content{
     position: absolute;
     bottom: 0;
-    color: var(--text-color);
     padding: 24px;
 }
 
-.news-container__principal-content h3,
+.news-container__principal-content a h3,
 .card__content h3{
     display: inline-block;
     margin-bottom: 12px;
     font-size: 1.6rem;
     font-weight: 500;
+    color: var(--text-color);
 }
 
 .news-container__principal-content p,
 .card__content p{
     font-size: 1rem;
     font-weight: 300;
+    color: var(--text-color);
 }
 
 .image-container{
@@ -150,3 +153,28 @@
     color: var(--text-color);
 }
 
+/*additional news*/
+
+.additional-news{
+    position: absolute;
+    left: 24px;
+    bottom: 8px;
+}
+
+.additional-news a{
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.additional-news a span{
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+}
+
+.additional-news a:hover{
+    color: var(--tertiary-color);
+}
