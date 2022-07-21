@@ -33,27 +33,54 @@
     text-align: center;
 }
 
+.current-works__datastudio-container{
+    height: 36px;
+    width: 100%;
+    margin: 0 24px;
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+.current-works__datastudio-container a{
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.current-works__datastudio-container a span{
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+}
+
+.current-works__datastudio-container a:hover{
+    color:var(--tertiary-color)
+}
+
 .current-works__iframe-container{
     position: relative;
+    margin: 0 24px;
     width: 100%;
-    height: calc(100vh - 240px - 48px - 12px - 60px);
+    height: calc(100vh - 240px - 48px - 12px - 60px - 36px);
 }
 
 .current-works__iframe-container > div{
     position: absolute;
     top: 12px;
-    left: 12px;
+    left: 0;
     height: calc(100% - 24px);
-    width: calc(100% - 24px);
+    width: 100%;
     background: linear-gradient(0deg, var(--gradient-primary-color) 0%, var(--gradient-secondary-color) 50%, var(--gradient-tertiary-color)100%);
     z-index: 1;
 }
 
-.current-works__iframe-container iframe{
+.current-works__iframe-container iframe,
+.current-works__iframe-container img{
     margin-bottom: 12px;
     height: 100%;
     width: 100%;
-    padding: 12px;
+    padding: 12px 0;
     object-fit: cover;
     object-position: center;
     filter: grayscale(1);
