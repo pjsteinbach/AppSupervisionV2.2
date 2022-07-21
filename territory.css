@@ -13,7 +13,9 @@
 .territory-container__card{
     position: relative;
     overflow: hidden;
-    width: 360px;
+    width: 100%;
+    min-width: 360px;
+    max-width: 400px;
 }
 
 .territory-container__img{
@@ -37,7 +39,8 @@
     opacity: .9;
 }
 
-.card__content-text{
+.card__content-text h3,
+.card__content-text p{
     color: var(--primary-color);
 }
 
