@@ -4,7 +4,7 @@
     width: 80%;
     height: 75vh;
     margin: 0 auto;
-    padding: 60px 36px 24px 36px;
+    padding: 72px 36px 36px;
 }
 
 .additional-stock-container article ul{
@@ -18,18 +18,17 @@
 .additional-stock-container article ul li a{
     position: relative;
     display: inline-block;
-    padding: 8px;
     text-decoration: none;
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
+    line-height: 2.2em;
 }
 
 .additional-stock-container article ul li a::before{
     content: '';
     position: absolute;
     bottom: 0;
-    left: 8px;
     height: 4px;
     width: 0;
     border-radius: 2px;
@@ -45,5 +44,5 @@
 
 .additional-stock-container article ul li a:hover::before{
     opacity: 1;
-    width: calc(100% - 16px);
+    width: 100%;
 }
