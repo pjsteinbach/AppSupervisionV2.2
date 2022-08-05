@@ -82,12 +82,12 @@
     background-color: var(--text-color);
     width: 94%;
     left: 20px;
-    top: -240px;
+    top: -250px;
     transition: calc( var(--time-transition) * 2);
 }
 
 .active{
-    top: 4px;
+    top: 0px;
 }
 
 .card__content-zones div{
@@ -102,6 +102,7 @@
     color: var(--primary-color);
     font-size: .8rem;
     font-weight: 300;
+    line-height: 1.7em;
     padding: 4px;
 }
 
