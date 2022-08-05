@@ -1,36 +1,44 @@
-.table-container{
-    margin: 0 auto;
-    height: 100vh;
+body{
+    width: 1936px;
     overflow: scroll;
-    width: 2088px;
 }
 
 .activity-table{
+    width: 100%;
     background-color: var(--text-color);
-    color: var(--primary-color);
     border-collapse: collapse;
 }
 
-th, td{
+.activity-table__header{
+    width: 1936px;
+    position: fixed;
+    z-index: 1;
+}
+
+.activity-table__header tr th{
+    display: inline-block;
+    height: 44px;
     padding: 8px;
-    font-size: .8rem;
-}
-
-.table__header{
-    position: sticky;
-}
-
-.activity-table tr th{
-    font-weight: 500;
     background-color: var(--primary-color);
-    text-transform: uppercase;
     color: var(--text-color);
-    border-right: .5px solid gray;
+    font-size: .7rem;
+    font-weight: 500;
+    border: .5px solid gray;
+}
+
+.activity-table__body{
+    display: block;
+    margin-top: 44px;
 }
 
 .activity-table__body tr td{
     position: relative;
+    display: inline-block;
+    padding: 8px;
+    color: var(--primary-color);
+    font-size: .7rem;
     font-weight: 300;
+    
 }
 
 .activity-table__body > tr > td > span{
@@ -42,53 +50,51 @@ tr:nth-child(even){
     background-color: var(--gradient-tertiary-color);
 }
 
-tr:hover td{
+tr:hover{
     background-color: var(--tertiary-color);
 }
 
-.activity-table__body > tr > td > a{
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    opacity: .7;
+.report a span{
+    transition: var(--time-transition);
 }
 
-.activity-table__body > tr > td > a:hover{
+.activity-table__body tr td a:hover span{
     color: var(--text-color);
-    opacity: 1;
+    font-weight: 700;
+    transform: scale(1.2);
 }
 
-.activity-table__body > tr > td > a > span{
-    font-size: 1.8rem;
-    cursor: pointer;
+.report,
+.date{
+    width: 72px;
 }
 
-/*column widths*/
-
-.activity-table--date,
-.activity-table--report,
-.activity-table--duration{
-    width: 96px;
+.duration{
+    width: 72px;
 }
 
-.activity-table--workers,
-.activity-table--meters,
-.activity-table--waste{
+.type,
+.municipality,
+.locality,
+.cooperative{
     width: 120px;
 }
 
-.activity-table--type,
-.activity-table--municipality,
-.activity-table--locality,
-.activity-table--location,
-.activity-table--cooperative{
+.location,
+.meters,
+.waste{
     width: 160px;
 }
 
-.activity-table--watercourse{
-    width: 240px;
+.watercourse,
+.workers{
+    width: 200px;
 }
 
-.activity-table--observations{
-    width: 400px;
+.observations{
+    width: 360px;
+}
+
+.ta-center{
+    text-align: center;
 }
