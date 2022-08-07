@@ -511,5 +511,14 @@
             </tr>
         </tbody>
     </table>
+
+    <script>
+        const header = document.querySelector('.activity-table__header');
+
+        window.addEventListener('scroll', function(){
+            var x = window.scrollX;
+            header.style.transform = "translateX(-"+x+"px)";
+        })
+    </script>
 </body>
 </html>
