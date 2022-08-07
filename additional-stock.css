@@ -20,29 +20,37 @@
     display: inline-block;
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 300;
     line-height: 2.2em;
+    transition: var(--time-transition);
 }
 
-.additional-stock-container article ul li a::before{
+.additional-stock-container article ul li a::before,
+.additional-stock-container article ul li a::after{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 19px;
+    left: -20px;
     height: 4px;
-    width: 0;
+    width: 12px;
     border-radius: 2px;
+    transform: rotate(45deg);
     background-color: var(--tertiary-color);
     opacity: 0;
     transition: var(--time-transition);
+}
 
+.additional-stock-container article ul li a::after{
+    bottom: 12px;
+    transform: rotate(135deg);
 }
 
 .additional-stock-container article ul li a:hover{
     color: var(--tertiary-color);
 }
 
-.additional-stock-container article ul li a:hover::before{
+.additional-stock-container article ul li a:hover::before,
+.additional-stock-container article ul li a:hover::after{
     opacity: 1;
-    width: 100%;
 }
