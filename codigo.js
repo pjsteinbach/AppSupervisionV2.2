@@ -1,8 +1,14 @@
-const selectZone = document.querySelector('.select-zone');
-const cardZone = document.querySelector('.card__content-zones');
+const updateButom = document.querySelector('.update-butom');
+const zoneUpdate = document.querySelector('.zone__update');
+const weeklyPartButom = document.querySelector('.weekly-part-butom');
+const weeklyPart = document.querySelector('.zone__weekly-part');
 
-selectZone.onclick = function(){
-    cardZone.classList.toggle('active');
+updateButom.onclick = function(){
+    zoneUpdate.classList.toggle('active');
+}
+
+weeklyPartButom.onclick = function(){
+    weeklyPart.classList.toggle('active');
 }
 
 window.addEventListener("scroll", function(){
