@@ -48,12 +48,15 @@
     transform: translateX(0);
 }
 
+.card__content-button{
+    display: flex;
+    justify-content: space-between;
+}
+
 .card__content-button a, .card__content-button input[type="button"]{
     display: inline-block;
     height: 36px;
     width: 140px;
-    margin-left: 0;
-    margin-right: 8px;
     border-radius: 18px;
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -80,41 +83,54 @@
 .card__content-zones{
     position: absolute;
     background-color: var(--text-color);
-    width: 94%;
-    left: 20px;
+    width: 100%;
+    left: 0;
     top: -250px;
     transition: calc( var(--time-transition) * 2);
 }
 
-.active{
-    top: 0px;
+.card__content-zones div ul li{
+    list-style: none;
+    border-bottom: 1px dashed var(--secondary-color);
+    text-align: center;
 }
 
-.card__content-zones div{
-    border-bottom: 1px dashed rgba(0, 0, 0, .2);
-    width: 92%;
-}
-
-.card__content-zones div p,
-.card__content-zones div a,
-.card__content-zones div span{
-    display: inline-block;
-    color: var(--primary-color);
-    font-size: .8rem;
-    font-weight: 300;
-    line-height: 1.7em;
-    padding: 4px;
-}
-
-.card__content-zones div p{
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.card__content-zones div a{
+.card__content-zones div ul li a{
     text-decoration: none;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
 }
 
-.card__content-zones div a:hover{
+.card__content-zones .zone__update,
+.card__content-zones .zone__weekly-part{
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 50%;
+    height: 236px;
+    top: 260px;
+    opacity: 0;
+    transition: calc(var(--time-transition) * 2);
+}
+
+.card__content-zones .zone__update{
+    left: -180px;
+}
+
+.card__content-zones .zone__weekly-part{
+    right: -180px;
+}
+
+.card__content-zones .zone__update.active{
+    left: 0;
+    opacity: 1;
+}
+
+.card__content-zones .zone__weekly-part.active{
+    right: 0;
+    opacity: 1;
+}
+
+.card__content-zones div ul li a:hover{
     color: var(--tertiary-color);
 }
