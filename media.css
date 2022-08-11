@@ -56,6 +56,23 @@
     .nav-container__list li::before{
         content: '';
     }
+
+    .header-title-container{
+        left: 24px;
+        width: 80%;
+    }
+    
+    .header-title-container h2{
+        font-size: 2rem;
+    }
+    
+    .header-title-container p{
+        display: inline;
+        line-height: 3rem;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        padding: 12px;
+    }
     
 /*territory*/
 
@@ -281,6 +298,21 @@
 @media (max-width: 426px) {
     .main--h2{
         font-size: 2rem;
+    }
+
+    .header-title-container{
+        left: 24px;
+        width: 94%;
+    }
+    
+    .header-title-container h2{
+        font-size: 1.5rem;
+    }
+    
+    .header-title-container p{
+        line-height: 2rem;
+        font-size: .6rem;
+        padding: 8px;
     }
 
     /*territory*/
