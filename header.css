@@ -4,6 +4,28 @@
     width: 100%;
 }
 
+.header-title-container{
+    position: absolute;
+    bottom: 10%;
+    left: 36px;
+    width: 72%;
+    color: var(--secondary-color);
+    opacity: .6;
+}
+
+.header-title-container h2{
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.header-title-container p{
+    display: inline;
+    line-height: 3rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 12px;
+}
+
 .header-bg video{
     position: absolute;
     top: 0;
