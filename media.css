@@ -221,25 +221,21 @@
     /*additional stocks*/
 
     .additional-stock-container{
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 0;
         margin: 0;
-        padding: 12px;
+        width: 100%;
     }
 
-    .additional-stock-container article ul li a{
-        padding: 4px;
-        font-size: .8rem;
-        font-weight: 300;
+    .additional-stock-container article{
+        margin: 8px 0;
     }
 
-    .additional-stock-container article ul li a::before{
-        left: 4px;
-        height: 2px;
-        border-radius: 1px;
-    }
-
-    .additional-stock-container article ul li a:hover::before{
-        width: calc(100% - 8px);
+    .additional-stock-container article h3{
+        font-size: 1.2rem;
+        margin: 8px;
     }
     
     /*footer*/
