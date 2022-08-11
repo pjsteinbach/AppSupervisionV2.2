@@ -5,7 +5,7 @@
     width: 80%;
     height: 75vh;
     margin: 0 auto;
-    padding: 36px 24px;
+    padding: 36px 24px 8px;
 }
 
 .additional-stock__tools{
@@ -23,17 +23,23 @@
     grid-row: 2 / 3;
 }
 
+.additional-stock-container article{
+    background-color: var(--primary-color);
+    margin: 8px;
+    padding: 8px;
+}
+
 .additional-stock-container article h3{
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 1.3rem;
     border-bottom: 1px solid var(--secondary-color);
-    margin-top: 36px;
-    margin-right: 36px;
+    margin: 12px;
 }
 
 .additional-stock-container article ul{
     text-align: left;
+    margin-left: 24px;
 }
 
 .additional-stock-container article ul li{
@@ -47,7 +53,7 @@
     color: var(--text-color);
     font-size: 1em;
     font-weight: 300;
-    line-height: 2.2em;
+    line-height: 2em;
     transition: var(--time-transition);
 }
 
