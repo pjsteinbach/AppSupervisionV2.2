@@ -88,6 +88,13 @@
     top: -250px;
     transition: calc( var(--time-transition) * 2);
 }
+.card__content-zones div ul{
+    padding: 24px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .card__content-zones div ul li{
     list-style: none;
