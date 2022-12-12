@@ -1,9 +1,8 @@
 .additional-stock-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     width: 80%;
-    height: 75vh;
     margin: 0 auto;
     padding: 36px 24px 8px;
 }
