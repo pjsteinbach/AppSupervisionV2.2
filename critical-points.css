@@ -1,0 +1,11 @@
+.critical-points-container{
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.critical-points-iframe{
+    width: 97%;
+    height: 97%;
+    border: 1px solid white;;
+}
