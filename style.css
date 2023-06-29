@@ -81,6 +81,7 @@ body main aside{
 
 body main aside h2{
     position: relative;
+    right: 0;
     display: block;
     margin: 80px 0;
     font-family: 'Karma', serif;
@@ -92,6 +93,7 @@ body main aside h2{
 body main aside h2::after{
     content: '';
     position: absolute;
+    bottom: 0;
     height: 8px;
     width: 96px;
     border-radius: 4px;
@@ -100,19 +102,20 @@ body main aside h2::after{
 
 .territory-main-container > aside > h2::after,
 .activity-main-container > aside > h2::after,
-.additional-main-container > aside > h2::after{
+.critical-points-main-container > aside > h2::after{
     top: 180px;
     left: 160px;
 }
 
-.news-main-container > aside > h2::after{
-    top: 84px;
+.news-main-container > aside > h2::after,
+.current-works-main-container > aside > h2::after,
+.additional-main-container > aside > h2::after{
+    top: 180px;
     right: 200px;
 }
 
-.current-works-main-container > aside > h2::after{
-    top: 180px;
-    right: 200px;
+.news-main-container > aside > h2::after{
+    top: 85px;
 }
 
 /*media*/
@@ -123,4 +126,3 @@ body main aside h2::after{
     font-weight: 300;
     padding: 24px;
 }
-
