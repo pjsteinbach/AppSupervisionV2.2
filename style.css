@@ -101,13 +101,16 @@ body main aside h2::after{
 }
 
 .territory-main-container > aside > h2::after,
-.activity-main-container > aside > h2::after,
-.critical-points-main-container > aside > h2::after{
+.activity-main-container > aside > h2::after{
     top: 180px;
     left: 160px;
 }
 
-.news-main-container > aside > h2::after,
+.critical-points-main-container > aside > h2::after{
+    top: 85px;
+    left: 160px;
+}
+
 .current-works-main-container > aside > h2::after,
 .additional-main-container > aside > h2::after{
     top: 180px;
@@ -116,6 +119,7 @@ body main aside h2::after{
 
 .news-main-container > aside > h2::after{
     top: 85px;
+    right: 200px;
 }
 
 /*media*/
