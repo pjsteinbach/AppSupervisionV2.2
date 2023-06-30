@@ -27,7 +27,7 @@
         display: flex;
         flex-direction: column;
         background-color: var(--primary-color);
-        height: 0;
+        height: 0px;
         right: 0;
         top: 60px;
         transition: var(--time-transition);
@@ -219,21 +219,10 @@
         font-size: .8rem;
     }
 
-    .current-works__datastudio-container{
-        width: calc(100% - 48px);
-    }
-
-
     .activity-container iframe{
         height: calc(150vh - 240px - 36px);
 
     }
-
-    .current-works__iframe-container{
-        height: calc(100vh - 240px - 36px);
-        width: calc(100% - 48px);
-    }
-
 
     /*additional stocks*/
 
@@ -248,11 +237,12 @@
 
     .additional-stock-container article{
         margin: 8px 0;
+        padding: 0;
     }
 
     .additional-stock-container article h3{
         font-size: 1.2rem;
-        margin: 8px;
+        margin: 8px 0px;
     }
     
     /*footer*/
@@ -357,7 +347,6 @@
 
     /*activities*/
 
-
     .activity__icons,
     .current-works__icons{
         display: flex;
@@ -393,7 +382,7 @@
     }
 
     .activity-container iframe{
-        height: 520px;
+        height: 650px;
         width: 100%;
         margin: 0;
     }
@@ -402,19 +391,12 @@
     /*current- works*/
 
     .current-works-container{
-        height: 100vh;
+        height: 40vh;
+        padding-left: 0;
     }
 
-    .current-works__iframe-container{
+    .current-work-iframe{
         height: 36vh;
-    }
-
-    .current-works__datastudio-container a{
-        font-size: 1rem;
-    }
-
-    .current-works__datastudio-container a span{
-        font-size: 1.2rem;
     }
 
 
