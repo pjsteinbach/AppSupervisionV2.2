@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Scope+One&display=swap');
 
 :root{
-    --dark-color: #574a44;
-    --light-color: #e2e1e7;
-    --dark-gray: #696a6c;
-    --light-gray: #bebeca;
-    --primary-color: #e5a18e;
-    --secondary-color: #f6d5c2;
+    --dark-color: #181D26;
+    --light-color: #ebf2f1;
+    --dark-gray: #4f5965;
+    --light-gray: #c8cacd;
+    --primary-color: #098abd;
+    --secondary-color: #6883A6;
     --title-font: "Francois One", serif;
     --body-font: "Scope One", serif;
 }
