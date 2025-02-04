@@ -53,7 +53,7 @@ section{
     margin-left: 8px;
     font-family: var(--title-font);
     font-weight: 200;
-    color: var(--dark-color);
+    color: var(--light-color);
     line-height: 32px;
 }
 
