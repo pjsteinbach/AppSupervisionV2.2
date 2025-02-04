@@ -36,7 +36,7 @@ section{
 .tittle{
     margin: 12px auto 0;
     font-family: var(--title-font);
-    color: var(--dark-color);
+    color: var(--dark-gray);
 }
 
 .header_container{
