@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
     --dark-color: #181D26;
@@ -7,8 +7,8 @@
     --light-gray: #c8cacd;
     --primary-color: #098abd;
     --secondary-color: #6883A6;
-    --title-font: "Francois One", serif;
-    --body-font: "Scope One", serif;
+    --tittle-font: "Nunito", sans-serif;
+    --body-font: "Lexend", sans-serif;
 }
 
 *{
@@ -35,7 +35,8 @@ section{
 
 .tittle{
     margin: 12px auto 0;
-    font-family: var(--title-font);
+    font-family: var(--tittle-font);
+    font-size: .9rem;
     color: var(--dark-gray);
 }
 
@@ -51,8 +52,8 @@ section{
 
 .header_container h3{
     margin-left: 8px;
-    font-family: var(--title-font);
-    font-weight: 200;
+    font-family: var(--tittle-font);
+    font-weight: 400;
     color: var(--light-color);
     line-height: 32px;
 }
@@ -86,7 +87,7 @@ section{
     font-family: var(--body-font);
     text-decoration: none;
     color: var(--dark-gray);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 32px;
 }
 
